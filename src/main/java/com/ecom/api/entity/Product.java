@@ -16,13 +16,16 @@ public class Product {
     private String productDesc;
     private String productImg;
 
-
+    @ManyToMany
     private List<Category> categories=new ArrayList<>();
 
+    @OneToMany(mappedBy = "product",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     private List<Order> orders=new ArrayList<>();
 
+    @OneToMany(mappedBy = "product",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     private List<Review> reviews=new ArrayList<>();
 
+    @OneToOne
     private Price price;
 
 }

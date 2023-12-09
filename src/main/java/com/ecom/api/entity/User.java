@@ -18,9 +18,10 @@ public class User {
     private String password;
     private String address;
 
-
+    @OneToMany(mappedBy = "user",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     private List<Order>orders=new ArrayList<>();
 
+    @OneToMany(mappedBy = "user",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     private List<Review>reviews=new ArrayList<>();
 
 }

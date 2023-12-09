@@ -12,8 +12,10 @@ public class Review {
     private String reviewDescription;
     private int rating;
 
+    @ManyToOne
     private Product product;
 
+    @ManyToOne
     private User user;
 
 }

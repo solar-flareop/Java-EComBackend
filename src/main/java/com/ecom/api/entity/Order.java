@@ -12,8 +12,10 @@ public class Order {
     private String delivaryAddress;
     private int orderBill;
 
+    @ManyToOne
     private Product product;
 
+    @ManyToOne
     private User user;
 
 

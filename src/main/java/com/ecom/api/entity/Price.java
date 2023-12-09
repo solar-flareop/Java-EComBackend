@@ -14,6 +14,7 @@ public class Price {
     private String siteName;
     private int amount;
 
+    @OneToOne(mappedBy = "price",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     private Product product;
 
 }
