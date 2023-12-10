@@ -26,6 +26,7 @@ public class Product {
     private List<Review> reviews=new ArrayList<>();
 
     @OneToOne
+    @JoinColumn(name = "price_id")
     private Price price;
 
 }
