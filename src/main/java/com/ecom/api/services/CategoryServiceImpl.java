@@ -8,4 +8,8 @@ import java.util.List;
 @Service
 public class CategoryServiceImpl implements CategoryService{
 
+    @Override
+    public List<Category> getAllCategories() {
+        return null;
+    }
 }
