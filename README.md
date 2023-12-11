@@ -1,6 +1,6 @@
 Certainly! Below is a basic template for a README.md file for your Spring Boot e-commerce project:
 
-```markdown
+
 # E-Commerce Platform
 
 ## Overview
