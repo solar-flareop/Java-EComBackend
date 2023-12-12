@@ -1,6 +1,3 @@
-Certainly! Below is a basic template for a README.md file for your Spring Boot e-commerce project:
-
-
 # E-Commerce Platform
 
 ## Overview
